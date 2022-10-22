@@ -41,6 +41,12 @@ const Timeline = () => {
                     </div>
                 </VerticalTimelineElement>
             </VerticalTimeline>
+            <div style={{ textAlign: 'center', color: 'white', marginTop: '25px', fontSize: '24px' }}>
+                Video go here!
+            </div>
+            <div style={{ textAlign: 'center', color: 'white', marginTop: '25px', fontSize: '24px' }}>
+                Made with ❤️ by Faizu
+            </div>
         </>
     )
 }
