@@ -149,6 +149,10 @@ b.light-color {
 }
 
 
+.date {
+  color: white !important;
+  font-size: 1.5rem !important;
+}
 
 /* ---------------------------------
 2. COMMONS FOR PAGE DESIGN
@@ -224,9 +228,7 @@ b.light-color {
 
 
 .section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 100px 0 70px;
 }
 
 .section .heading {
@@ -527,8 +529,13 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 4. SLIDER
 --------------------------------- */
 
-/* .main-slider{ height: 100vh; position: relative; z-index: 1; 
-	background-image: url(./images/slider-1-1600x900.jpg); background-size: cover; color: #fff; }  */
+.main-slider {
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  color: #fff;
+}
 
 .main-slider:after {
   content: '';
@@ -553,11 +560,6 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
   font-size: 2.5em;
 }
 
-
-.title {
-  color: white;
-}
-
 .slider-content .title i {
   transform: translateY(10px);
   font-size: .8em;
@@ -574,33 +576,58 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
   z-index: 1;
 }
 
-/* .story-area:after{ content: ''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1;
-	opacity: .8; background: url(./images/Background_Circle.png); } */
+.story-area:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  opacity: .8;
+}
 
 
 /* ---------------------------------
 6. REMAINING TIME
 --------------------------------- */
 
-/* .counter-area{ position: relative; z-index: 1; 
-	background-image: url(./images/counter-1-1600x600.jpg); background-size: cover; color: #fff; } */
+.counter-area {
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  color: #fff;
+}
+
+.counter-area:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, .3);
+}
 
 .remaining-time .time-sec {
   position: relative;
   display: inline-block;
   margin: 0 20px;
-  height: 80px;
-  width: 80px;
-  padding-top: 28px;
-  border-radius: 130px;
+  margin-bottom: 30px;
+  height: 120px;
+  width: 120px;
+  padding-top: 25px;
+  border-radius: 100px;
   border: 1px solid #F14E95;
   color: #fff;
   background: rgba(241, 78, 149, 0.8);
+
   animation: pulse 1s ease infinite;
 }
 
 .remaining-time .time-sec .title {
-  font-size: 1.8em;
+  font-size: 3em;
   line-height: 1;
   display: block;
 }
@@ -720,8 +747,12 @@ header .main-menu li.drop-down a.mouseover+ul.drop-down-menu {
 8. WEDDING CEREMONY
 --------------------------------- */
 
-/* .ceremony-area{ position: relative; z-index: 1; 
-	background-image: url(./images/counter-1-1600x600.jpg); background-size: cover; color: #fff; } */
+.ceremony-area {
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  color: #fff;
+}
 
 .ceremony-area:after {
   content: '';
@@ -791,8 +822,16 @@ footer {
   padding-top: 10px;
 }
 
-/* footer:after{ content: ''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1;
-	opacity: .8; background: url(./images/Background_Circle.png); } */
+footer:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  opacity: .8;
+}
 
 footer ul>li>a {
   padding: 10px 15px;
