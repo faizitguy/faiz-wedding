@@ -1,9 +1,9 @@
 import React, { useCallback } from 'react'
 import Particles from 'react-tsparticles'
 import { loadFull } from "tsparticles";
-import colors from './colors.config';
-import fireworks from './fireworks.config';
-import confetti from './confetti.config';
+import colors from './config/colors.config';
+// import fireworks from './config/fireworks.config';
+// import confetti from './config/confetti.config';
 
 const ParticlesBackground = () => {
     const particlesInit = useCallback(async (engine) => {

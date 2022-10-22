@@ -1,4 +1,5 @@
 import './App.css';
+import CountDown from './components/countdown/Countdown';
 import ParticlesBackground from './components/ParticlesBackground';
 
 function App() {
@@ -6,8 +7,8 @@ function App() {
     <div>
       <ParticlesBackground />
       <div style={{ position: 'absolute', width: '100%', height: '100%' }}>
-        <div style={{ color: 'white' }}>
-          Hello world
+        <div>
+          <CountDown />
         </div>
       </div>
     </div>
