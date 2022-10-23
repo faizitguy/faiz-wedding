@@ -63,7 +63,6 @@ const CountDown = () => {
                     </ClocksWrapper>
                 </CountDownWrapper>
             }
-
         </>
     );
 }

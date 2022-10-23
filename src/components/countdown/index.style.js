@@ -31,9 +31,8 @@ export const Clock = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 35px;
-  border: 1px solid #F14E95;
-  color: #fff;
-  background: rgba(241, 78, 149, 0.8);
+  color: #fff; 
+  background: rgba(241, 78, 149, 0.2);
   animation: pulse 1s ease infinite;
   font-size: 1.2rem;
   padding: 12px 2px;
