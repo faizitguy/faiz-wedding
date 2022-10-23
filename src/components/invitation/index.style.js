@@ -71,6 +71,13 @@ export const ButtonsWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    a {
+      text-decoration: none;
+    }
+    a:active {
+      text-decoration: none;
+    }
 `;
 
 export const NeoButton = styled.div`

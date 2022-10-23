@@ -7,6 +7,7 @@ import {
     ButtonsWrapper,
     NeoButton
 } from './index.style';
+import WeddingCard from '../../assets/faiz_n_faheen_wedding_card.pdf';
 
 const Invitation = () => {
     return (
@@ -20,8 +21,12 @@ const Invitation = () => {
                     <h2>13.11.2022</h2>
                 </Heading>
                 <ButtonsWrapper>
-                    <NeoButton> <b>Invitation Card</b></NeoButton>
-                    <NeoButton> <b>Get Location</b></NeoButton>
+                    <a href={WeddingCard} download="Faiz & Faheen Wedding Card" target='_blank' rel="noreferrer">
+                        <NeoButton> <b>Invitation Card</b></NeoButton>
+                    </a>
+                    <a href="https://goo.gl/maps/yZzYm1rEpZEbbgzX8" target="_blank" rel="noopener noreferrer">
+                        <NeoButton> <b>Get Location</b></NeoButton>
+                    </a>
                 </ButtonsWrapper>
 
             </InvitationWrapper>
