@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { CountDownWrapper, ClocksWrapper, Clock } from './index.style';
+import { CountDownWrapper, ClocksWrapper, Clock, CommonHeading } from './index.style';
 
 const CountDown = () => {
     const [isExpired, setIsExpired] = useState(false);
@@ -54,7 +54,7 @@ const CountDown = () => {
                 ? <div>Yay....</div>
                 :
                 <CountDownWrapper>
-                    <h2>Don't miss it!</h2>
+                    <CommonHeading>Don't miss it!</CommonHeading>
                     <ClocksWrapper>
                         <Clock><span>{days}</span> Days</Clock>
                         <Clock><span>{hours}</span> Hours</Clock>

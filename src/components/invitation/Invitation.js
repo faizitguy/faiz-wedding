@@ -1,27 +1,31 @@
 import React from 'react';
-import { InvitationWrapper, BismillahText } from './index.style';
+import {
+    Heading,
+    Invited,
+    InvitationWrapper,
+    BismillahText,
+    ButtonsWrapper,
+    NeoButton
+} from './index.style';
 
 const Invitation = () => {
     return (
-        <InvitationWrapper>
-            <BismillahText>“In the name of Allah, the most beneficent and most merciful”</BismillahText>
-            <BismillahText>You're cordially invited to the valima of </BismillahText>
-            <BismillahText>Faiz & Faheen</BismillahText>
-            <BismillahText>on</BismillahText>
-            <BismillahText>15-11-2022</BismillahText>
-            <div style={{ border: '2px solid white', color: 'white' }}>
-                Buttons go here!
-                <br />
-                <br />
-                <div style={{ color: 'white' }}>
-                    <button>Download Invitation</button>
-                </div>
-                <div style={{ color: 'white' }}>
-                    <button>Navigate to Destination</button>
-                </div>
-            </div>
+        <>
+            <InvitationWrapper>
+                <BismillahText>“In the name of Allah, the most beneficent and most merciful”</BismillahText>
+                <Invited>You're Invited!</Invited>
+                <Heading>
+                    <h1>Faiz & Faheen</h1>
+                    <h2>Are getting married</h2>
+                    <h2>13.11.2022</h2>
+                </Heading>
+                <ButtonsWrapper>
+                    <NeoButton> <b>Invitation Card</b></NeoButton>
+                    <NeoButton> <b>Get Location</b></NeoButton>
+                </ButtonsWrapper>
 
-        </InvitationWrapper>
+            </InvitationWrapper>
+        </>
     );
 }
 

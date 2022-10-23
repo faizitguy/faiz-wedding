@@ -2,11 +2,12 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import NikahIcon from '../../assets/icons/nikah';
 import LunchIcon from '../../assets/icons/lunch';
+import { CommonHeading } from '../countdown/index.style';
 
 const Timeline = () => {
     return (
         <>
-            <h2 style={{ textAlign: 'center', margin: '18px', color: 'white' }}>Wedding Details</h2>
+            <CommonHeading>Wedding Details</CommonHeading>
             <VerticalTimeline animate>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
@@ -21,7 +22,7 @@ const Timeline = () => {
                     <p className="vertical-timeline-element-subtitle">At sharp 11:00 AM</p>
                     <p>New Andhra Kalyana Mandapam, Rajampeta, Kadapa</p>
                     <div className="map-responsive">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3867.7829440730648!2d79.14342071475437!3d14.207483890053776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb32505314302fb%3A0x894dab24a439cb24!2sNew%20Andhra%20Kalyanamandapam!5e0!3m2!1sen!2sin!4v1666450185341!5m2!1sen!2sin" width="600" height="450" frameBorder="0" style={{ border: 0 }} allowFullScreen=""></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3867.7829440730648!2d79.14342071475437!3d14.207483890053776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb32505314302fb%3A0x894dab24a439cb24!2sNew%20Andhra%20Kalyanamandapam!5e0!3m2!1sen!2sin!4v1666450185341!5m2!1sen!2sin" title="nikahLocation" width="600" height="450" frameBorder="0" style={{ border: 0 }} allowFullScreen=""></iframe>
                     </div>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -37,15 +38,15 @@ const Timeline = () => {
                     <p className="vertical-timeline-element-subtitle">Lunch</p>
                     <p>Rahamathiya Function Hall, Kadapa</p>
                     <div className="map-responsive">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15451.92872509314!2d78.8306597!3d14.4857124!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x697999c1c95e2a9c!2sRahamatiya%2C%20Function%20Hall!5e0!3m2!1sen!2sin!4v1666450334376!5m2!1sen!2sin" width="600" height="450" frameBorder="0" style={{ border: 0 }} allowFullScreen=""></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15451.92872509314!2d78.8306597!3d14.4857124!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x697999c1c95e2a9c!2sRahamatiya%2C%20Function%20Hall!5e0!3m2!1sen!2sin!4v1666450334376!5m2!1sen!2sin" title="valimaLocation" width="600" height="450" frameBorder="0" style={{ border: 0 }} allowFullScreen=""></iframe>
                     </div>
                 </VerticalTimelineElement>
             </VerticalTimeline>
             <div style={{ textAlign: 'center', color: 'white', marginTop: '25px', fontSize: '24px' }}>
-                Video go here!
+                Video goes here!
             </div>
-            <div style={{ textAlign: 'center', color: 'white', marginTop: '25px', fontSize: '24px' }}>
-                Made with ❤️ by Faizu
+            <div style={{ textAlign: 'center', color: 'white', marginTop: '25px', fontSize: '18px' }}>
+                Made with ❤️ by @faizitguy
             </div>
         </>
     )

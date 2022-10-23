@@ -3,8 +3,16 @@ import styled from 'styled-components';
 export const CountDownWrapper = styled.div`
     color: white;
     text-align: center;
-    h2 {
-        margin-bottom: 12px;
+`;
+
+export const CommonHeading = styled.h2`
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  margin: 32px 0;
+
+    @media screen and (max-width: 568px) {
+        font-size: 36px;
     }
 `;
 
