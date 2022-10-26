@@ -8,8 +8,10 @@ import {
     NeoButton
 } from './index.style';
 import WeddingCard from '../../assets/faiz_n_faheen_wedding_card.pdf';
+import useAnalyticsEventTracker from '../useAnalyticsEventTracker';
 
 const Invitation = () => {
+    const gaEventTracker = useAnalyticsEventTracker('Invitation');
     return (
         <>
             <InvitationWrapper>
@@ -21,10 +23,10 @@ const Invitation = () => {
                     <h2>13.11.2022</h2>
                 </Heading>
                 <ButtonsWrapper>
-                    <a href={WeddingCard} download="Faiz & Faheen Wedding Card" target='_blank' rel="noreferrer">
+                    <a href={WeddingCard} onClick={() => gaEventTracker('invitationCard')} download="Faiz & Faheen Wedding Card" target='_blank' rel="noreferrer">
                         <NeoButton> <b>Invitation Card</b></NeoButton>
                     </a>
-                    <a href="https://goo.gl/maps/yZzYm1rEpZEbbgzX8" target="_blank" rel="noopener noreferrer">
+                    <a href="https://goo.gl/maps/yZzYm1rEpZEbbgzX8" onClick={() => gaEventTracker('location')} target="_blank" rel="noopener noreferrer">
                         <NeoButton> <b>Get Location</b></NeoButton>
                     </a>
                 </ButtonsWrapper>

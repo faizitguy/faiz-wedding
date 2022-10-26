@@ -4,13 +4,14 @@ import CountDown from './components/countdown/Countdown';
 import ParticlesBackground from './components/ParticlesBackground';
 import Timeline from './components/timeline';
 import Invitation from './components/invitation/Invitation';
-import ReactGa from 'react-ga';
+import ReactGA from 'react-ga';
+
 
 function App() {
   useEffect(() => {
-    ReactGa.initialize('G-HPGQ206E6C');
+    ReactGA.initialize('UA-247025347-1');
     // To Report page view
-    ReactGa.pageview('/');
+    ReactGA.pageview('/');
   }, []);
   return (
     <div>
